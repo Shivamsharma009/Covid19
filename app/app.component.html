@@ -1,0 +1,24 @@
+<div class="container mt-5">
+  <div class="card" style="align-items: center">
+    <h1>COVID 19 TRACKER APP</h1>
+  </div>
+  <div class="card">
+    <div class="row">
+      <div class="col-lg-4" *ngFor="let d of data">
+        <div class="card mt-3" style="padding: 5px">
+          Country: {{ d.country }} <br />
+          Cases : {{ d.cases }} <br />
+          Today Cases :{{ d.todayCases }} <br />
+          Deaths : {{ d.deaths }} <br />
+          Today Deaths : {{ d.todayDeaths }} <br />
+          Active : {{ d.active }} <br />
+          Critical: {{ d.critical }} <br />
+          Cases Per One Million : {{ d.casesPerOneMillion }} <br />
+          Deaths Per One Million :{{ d.deathsPerOneMillion }} <br />
+          Total Tests : {{ d.totalTests }} <br />
+          Tests Per One Million : {{ d.testsPerOneMillion }} <br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
